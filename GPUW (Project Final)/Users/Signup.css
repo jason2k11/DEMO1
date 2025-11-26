@@ -1,0 +1,219 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login {
+        width: 98vw;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .email-form, .name-form, .pass-form {
+        width: 90vw;
+        font-size: 1em;
+        padding: 6px;
+    }
+    .logo {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 480px) {
+    .login {
+        width: 100vw;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .email-form, .name-form, .pass-form {
+        width: 98vw;
+        font-size: 0.95em;
+        padding: 4px;
+    }
+}
+.body{
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+    padding-top: 60px;
+    background-image: url("https://dlcdnwebimgs.asus.com/files/media/ee5e2c09-19c6-4922-b4d6-f240e051c213/v1/video/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.login{
+    background-color: rgba(110, 109, 109, 0.749);
+    padding:15px;
+    display:inline-block;               
+    width: 500px;
+    height: 650px;
+    padding-top: 50px;
+    border-radius: 50px;
+}
+
+.logo{
+    border-radius: 999999px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:sans-serif;
+    color: #2c2b2b;
+}
+
+.form{
+    text-align: center;
+}
+
+                                                            /* Ho va Ten */
+
+.Email{
+    color:rgb(20, 32, 50);
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 350px;
+}
+
+.Name{
+    color:rgb(20, 32, 50);
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 370px;
+}
+.name-form{
+    border: 2px solid rgba(65, 64, 64, 0.463);
+    height: 40px;
+    width: 400px;
+    color: rgb(54, 3, 182);
+    font-size: 24px;
+    background-color: #cdc9c9;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;  
+    font-family: 'Segoe UI';
+}
+
+.name-form:hover{
+    background-color: #e2dcdc;
+    border-width: 2px;
+}
+
+
+.email-form{
+    border: 2px solid rgba(65, 64, 64, 0.463);
+    height: 40px;
+    width: 400px;
+    color: rgb(54, 3, 182);
+    font-size: 24px;
+    background-color: #cdc9c9;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: 'Segoe UI';
+}
+
+.email-form:hover{
+    background-color: #e2dcdc;
+    border-width: 2px;
+}
+
+
+                                                              /* Submit */
+
+.submit-form{
+    color: rgb(0, 102, 255);
+    background-color:#cdc9c9;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-family: 'Segoe UI';
+}
+.submit-form:hover{
+    cursor: pointer;
+    background-color: #e2dcdc;
+    border-width: 2px;
+}
+
+                                                              /* Place holder */
+
+input::placeholder {
+    color: rgb(0, 102, 255);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+                                                                 /* Pass */
+
+.pass-form{
+    border: 2px solid rgba(65, 64, 64, 0.463);
+    height: 40px;
+    width: 400px;
+    color: rgb(54, 3, 182);
+    font-size: 24px;
+    background-color: #cdc9c9;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: 'Segoe UI';
+}
+
+.pass-form:hover{
+    background-color: #e2dcdc;
+    border-width: 2px;
+}
+
+.Pass{
+    color:rgb(20, 32, 50);
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 300px;
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+
+}
+
+.figma-btn{
+    width: 50%; 
+    padding: 12px; 
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn{
+    width: 50%; 
+    padding: 12px; 
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.Signup{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+  

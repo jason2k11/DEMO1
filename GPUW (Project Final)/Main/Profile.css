@@ -1,0 +1,131 @@
+
+.profile-avatar {
+	text-align: center;
+	margin-bottom: 18px;
+}
+.profile-avatar img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid #007bff;
+	background: #eee;
+	margin-bottom: 8px;
+}
+.profile-avatar button {
+	padding: 6px 16px;
+	border: none;
+	border-radius: 5px;
+	background: #007bff;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.profile-avatar button:hover {
+	background: #9500ff;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 60px;
+    background-image: url("https://dlcdnwebimgs.asus.com/files/media/ee5e2c09-19c6-4922-b4d6-f240e051c213/v1/video/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.profile-container {
+	max-width: 400px;
+	margin: 40px auto;
+	background: #86a8e2dc;
+	padding: 24px 32px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.profile-container h2 {
+	text-align: center;
+	margin-bottom: 24px;
+	color: #33333373;
+}
+
+.profile-field {
+	margin-bottom: 18px;
+}
+
+.profile-field label {
+	display: block;
+	margin-bottom: 6px;
+	color: #f0f0f0;
+	font-size: 15px;
+}
+
+.profile-field input {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 15px;
+	background: #dcd7d7;
+	transition: border-color 0.2s;
+}
+
+.profile-field input:focus {
+	border-color: #007bff;
+	outline: none;
+	background: #fff;
+}
+
+.profile-actions {
+	text-align: center;
+}
+
+.profile-actions button {
+	margin: 0 8px;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 5px;
+	background: #3300ff;
+	color: #00ffea;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.profile-actions button:hover {
+	background: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.95em;
+  }
+  .card-img-top {
+    height: 120px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 480px) {
+  .product-card {
+    font-size: 0.85em;
+    padding: 5px;
+  }
+  .card-img-top {
+    height: 80px;
+  }
+}

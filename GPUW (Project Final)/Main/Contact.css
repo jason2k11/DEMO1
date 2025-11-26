@@ -1,0 +1,161 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 98%;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+  }
+  .search-form {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .logo {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+body {
+  font-family:sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 40px 0;
+  background-image: url("https://dlcdnwebimgs.asus.com/files/media/ee5e2c09-19c6-4922-b4d6-f240e051c213/v1/video/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  background: #ffffffa9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(91, 16, 211, 0.1);
+  margin-top: 100px;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4000ff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;  
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1643d7;
+  color: whitesmoke;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 99999px;
+}
+
+
+.navbar {
+  background-color: #222 !important;
+  position: sticky ;
+  top: 0px;
+  z-index: 9999;
+  margin-top: -40px;
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    color: white !important; 
+    margin-right: 30px; 
+    font-size: 16px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+    display: flex;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #999999 !important; 
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.search-form {
+    margin-left: 800px; 
+    display: flex;
+}
+
+.btn{
+  margin-top: auto; 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn:hover{
+    background-color:palevioletred;
+    transform: scale(1.05); 
+}

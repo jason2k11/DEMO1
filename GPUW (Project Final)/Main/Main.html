@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Main.css" />
+    <script src="../JS_FILE/Main.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid my-4">
+        <button class="logo-btn" onclick="window.location.href='Profile.html'" style="background:none;border:none;padding:0;">
+          <img class="logo" src="../anh/huge.png" alt="VNGPU" style="cursor:pointer;" />
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Main.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Users/Login.html">SignOut</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Cart.html">Your Cart</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+
+            <!--Bootstrap drop box-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="GPU.html">GPU</a></li>
+                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                <li><a class="dropdown-item" href="Monitor.html">Monitor</a></li>
+                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                <li><a class="dropdown-item" href="#">Headphone</a></li>
+              </ul>
+            </li>
+          </ul> 
+
+          <!-- Thanh tìm kiếm-->
+          <form class="search-form" role="search">
+            <input
+              class="form-control me-2" id="product-search-input"
+              type="search"
+              placeholder="Search products..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" id="product-search-btn" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+      <!--Carousel video-->
+      <div id="videoCarousel" class="carousel slide carousel-small mt-4">
+        <div class="carousel-inner  ">
+          <div class="carousel-item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FDRR4pt_UjM?si=mF5mgepUSydCl7u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="carousel- item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/xPhR3WpG4SE?si=2N5jT-kLV0dra9fN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qguE6JDYXmQ?si=6rKKoT8EpYUWDRYo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/i88APV24dsI?si=W8DXrAyEFsX0OJsM" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+            ></iframe>
+          </div>
+          
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!--Carousel image-->
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <div
+          id="myCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.asus.com/WebsitesBanner/global/banners/xgci9fteoh3ol7tb/xgci9fteoh3ol7tb-0_0_desktop_0_2X.jpg?webp"
+                class="d-block w-100 img"
+                alt="Slide 2"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://storage-asset.msi.com/global/picture/banner/banner_173699933363bc98f712af8218a54c604a4699484b.jpeg"
+                class="d-block w-100 img"
+                alt="Slide 3"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://www.gigabyte.com/FileUpload/Global/KeyFeature/3848/innergigabyte/images/kv.jpg"
+                class="d-block w-100 img"
+                alt="Slide 3"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://m.media-amazon.com/images/I/A1KUmtX9h0L.png  "
+                class="d-block w-100 img"
+                alt="Slide 3"
+              />
+            </div>
+
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+   <!--Gioi thieu hieu nang-->
+<section class="gaming-section">
+  <div class="gaming-container">
+    <!--  1 -->
+    <div class="gaming-item">
+      <div class="icon">🔥</div>
+      <h3>Overclocked Performance</h3>
+      <p>Push beyond limits. Clock speeds that scream.</p>
+    </div>
+
+    <!--2 -->
+    <div class="gaming-item">
+      <div class="icon">🧊</div>
+      <h3>Next-Gen Cooling</h3>
+      <p>Stay frosty and Silent.Game at max without meltdown.</p>
+    </div>
+
+    <!--  3 -->
+    <div class="gaming-item">
+      <div class="icon">⚙️</div>
+      <h3>AI-Powered Rendering</h3>
+      <p>Smarter frames, faster wins — AI does the heavy lifting.</p>
+    </div>
+  </div>
+</section>
+<!--Goi thieu sp moi-->
+<div class="container1">
+  <div class="product-cards">
+    <div class="product-card">
+      <img src="https://www.asus.com/WebsitesBanner/global/banners/aqe08ovs4lali1v6/aqe08ovs4lali1v6-5_0_desktop_5_2X.webp?webp" alt="ProArt P16">
+      <h2>ProArt P16</h2>
+      <p>Creativity Unrivaled, Anywhere</p>
+      <small>A new AI era begins</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://storage-asset.msi.com/global/picture/banner/banner_17375349349d46fd9846b81be8b66258b420ad927f.jpeg" alt="Titan 18HX">
+      <h2>Titan 18HX</h2>
+      <p>Dragon Edition norse myth</p>
+      <small>Dragon forged nominance</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.mos.cms.futurecdn.net/Va7SVcA9HKdE2fLYibSooA.png" alt="Predator">
+      <h2>Predator Helios</h2>
+      <p>ACER</p>
+      <small>Always cool😎 and cool🥶</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/2024/08/169-6.png" alt="ASUS monitor">
+      <h2>Asus ROG Swift PG27AQDM</h2>
+      <p>A phenomenal HDR monitor with an OLED panel</p>
+      <small>Wide range of brightness and brightness control for each pixel.</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.tgdd.vn/Files/2022/10/15/1479303/logitechtuhaogoidaylabieutuongduocsangtaolai_1280x720-800-resize.png" alt="Logitech mouse">
+      <h2>Logitech G502 X</h2>
+      <p>Latest addition to legendary G502 lineage.</p>
+      <small>Updated LIGHTSPEED wireless protocol with 68% faster response rate than the previous generation.</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4S7rWwdQwWKgIDgJ1geSUnxvrfVICmDzGA&s" alt="Razer headphone">
+      <h2>Razer Kraken V4</h2>
+      <p>FULL SPECTRUM IMMERSION. UNLEASHED.</p>
+      <small>Supercharged with 3 modes of connectivity, a super wideband mic, and 9-zone earcup lighting, redefine how you play in every way imaginable.</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.wccftech.com/wp-content/uploads/2025/08/2025-08-19_19-00-28-728x410.png" alt="Rog Matrix">
+      <h2>Rog Matrix (limited edition)</h2>
+      <p>30th anniversary edition, only 1000 units available.</p>
+      <small>Power up to 800w, 10% faster than classic edition, have all modern features from Asus Rog</small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+        <div class="product-card">
+      <img src="data:image/jpeg;base64,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" alt="Rog Matrix">
+      <h2>Aorus laptop edition </h2>
+      <p>Laptop aorus edition from gigabytes</p>
+      <small>More slim, powerful, give owners motivation to works and games </small>
+      <a href="#" class="learn-more">Learn more →</a>
+    </div>
+
+  </div>
+</div>
+<!--Che do-->
+<section class="gaming-section">
+  <div class="gaming-container">
+    <!-- 1 -->
+    <div class="gaming-item">
+      <div class="icon">💞</div>
+      <h3>Guarantee</h3>
+      <p>Beyond the sale - we are still here.</p>
+    </div>
+
+    <!--  2 -->
+    <div class="gaming-item">
+      <div class="icon">💵</div>
+      <h3>Cheaper</h3>
+      <p>Unbeatable prices, undeniable value.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="gaming-item">
+      <div class="icon">🤩</div>
+      <h3>All you need</h3>
+      <p>Need Less Searching? We’ve Got Everything.</p>
+    </div>
+  </div>
+</section>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo">VNGPU</p>
+      <div class="contact-apps">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="white" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+          <a href="#">Tiktok Contact</a>
+          <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="White" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" corlo="white" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+        </svg>
+
+        <a href="#">About</a>
+        <a href="#">Adress</a>
+        <a href="#">Privacy</a>
+
+      </div>
+      <p class="footer-copy">&copy; 2025 VNGPU. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src ="Main.js"></script>
+      <script>
+  // Khởi tạo giỏ hàng từ localStorage
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Hàm thêm sản phẩm vào giỏ hàng
+  function addToCart(product) {
+    product.price = Number(product.price); // Đảm bảo giá là số
+    let found = false;
+    for (let item of cart) {
+      if (item.id === product.id) {
+        item.quantity += 1;
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      product.quantity = 1;
+      cart.push(product);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  // Gắn sự kiện cho nút thêm vào giỏ hàng
+  window.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const product = {
+          id: btn.dataset.id,
+          name: btn.dataset.name,
+          price: btn.dataset.price
+        };
+        addToCart(product);
+        alert('Đã thêm vào giỏ hàng!');
+      });
+    });
+  });
+      </script>
+  </body>
+</html>

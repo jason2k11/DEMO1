@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>    
+  <link rel="stylesheet" href="Login.css">
+
+  <!-- Google -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script type="module" src="../JS_FILE/Login.js"></script>
+</head>
+<body class="body">
+  <div class="login">
+
+    <div class="logo">
+      <h1 style="color: turquoise;">VNGPU</h1>
+      <p style="color: turquoise;">Đăng nhập tài khoản để trải nghiệm</p>
+    </div>
+
+    <div class="icons">
+      <button class="figma-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" 
+             alt="Figma" class="btn-icon">
+        Login with Figma    
+      </button>
+
+      <button class="google-btn" id="googleLoginBtn">
+        <img src="../anh/Google__G__logo.svg.png" alt="google" class="btn-icon">
+        Login with Google
+      </button>
+    </div>
+
+    <form class="form" action="/submit_form" method="post">
+      <label class="Email" for="lname" style="color: turquoise;"> Email:</label><br>
+      <input class="email-form" type="text" id="lname" placeholder="Nhập Email của bạn" name="lname"><br><br>
+
+      <label class="Pass" for="password" style="color: turquoise;"> Mật khẩu:</label><br>
+      <input class="pass-form" type="password" id="password" placeholder="Nhập Pass của bạn" name="password"><br><br>
+
+      <input class="submit-form" type="submit" value="Đăng nhập">
+    </form>
+    
+    <div class="Signup">
+      <a href="Signup.html" style="color: turquoise;">Bạn chưa có tài khoản? Đăng Kí</a>
+      <a href="#" style="color: turquoise;">Đăng nhập bằng SSO</a>
+      <a href="#" style="color: turquoise;">Quên Mật Khẩu?</a>
+    </div>
+
+    <pre id="output"></pre>
+  </div>
+</body>
+</html>

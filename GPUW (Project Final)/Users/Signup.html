@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+        <script type="module" src="../JS_FILE/Signup.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body class="body">
+    <div class="login">
+
+        <div class ="logo">
+            <h1 style="color: turquoise;">VNGPU</h1>
+            <p style="color: turquoise;">Đăng kí để tham gia với chúng tôi </p>
+        </div>
+        <div class="icons">
+            <button class="figma-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="btn-icon">
+                Login with Figma
+            </button>
+
+            <button class="google-btn">
+                <img src="../anh/Google__G__logo.svg.png" alt="google" class="btn-icon">
+                Login with Google
+            </button>
+        </div>
+
+
+        <form class="form" action="/submit_form" method ="post">
+            <label class="Name" for="username" style="color: turquoise;">Tên:</label><br>
+            <input class="name-form" type="text" placeholder="Nhập tên đăng nhập" id="username" name="username"><br>
+            <label class="Email" for="email" style="color: turquoise;">Email:</label><br>
+            <input class="email-form" type="email" id="email" placeholder="Nhập email của bạn" name="email"><br><br>
+            <label class="Pass" for="password" style="color: turquoise;">Mật khẩu:</label><br>
+            <input class="pass-form" type="password" id="password" placeholder="Nhập mật khẩu của bạn" name="password"><br><br>
+            <input class="submit-form" type="submit" value="Đăng kí">
+        </form>
+        
+        <div class="Signup">
+            <a href="#" style="color: turquoise;">Đăng kí bằng số điện thoại</a>
+            <a href="Login.html" style="color: turquoise;">Bạn đã có tài khoản? Đăng nhập</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GPU PAGE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="GPU.css" />
+  <script src="../JS_FILE/GPU.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid my-4">
+        <img class="logo" src="../anh/huge.png" alt="VNGPU" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Main.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">SignOut</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Cart.html">Your Cart</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+
+          <!--Bootstrap drop box-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="GPU.html">GPU</a></li>
+                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                <li><a class="dropdown-item" href="Monitor.html">Monitor</a></li>
+                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                <li><a class="dropdown-item" href="#">Headphone</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <!-- Thanh tìm kiếm-->
+          <form class="search-form" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carousel video-->
+      <div id="videoCarousel" class="carousel slide carousel-small mt-4">
+        <div class="carousel-inner  ">
+          <div class="carousel-item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FDRR4pt_UjM?si=mF5mgepUSydCl7u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/xPhR3WpG4SE?si=2N5jT-kLV0dra9fN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qguE6JDYXmQ?si=6rKKoT8EpYUWDRYo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/i88APV24dsI?si=W8DXrAyEFsX0OJsM" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+            ></iframe>
+          </div>
+          
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid my-4">
+      <div class="row">
+        <!-- Product List -->
+        <div class="col-md-3">
+          <!--Cot filter-->
+          <div class="filter-section body1">
+            <div class="filter-group">
+              <h3>By Chipset Brand</h3>
+              <div class="filter-option">
+                <input type="checkbox" id="amd" />
+                <label for="amd">AMD</label>
+                <span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="nvidia" />
+                <label for="nvidia">NVIDIA</label>
+                <span class="count">(Test)</span>
+              </div>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <div class="filter-group">
+              <h3>By Brand / Series</h3>
+              <div class="filter-option">
+                <input type="checkbox" id="rog" /><label for="rog"
+                  >ROG - Republic of Gamers(Asus)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="tuf" /><label for="tuf"
+                  >TUF Gaming(Asus)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="proart" /><label for="proart"
+                  >Ventus / Ventus X(MSI)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="prime" /><label for="prime"
+                  >Suprim / Suprim X(MSI)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="ko" /><label for="ko">AORUS(GIGABYTE)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="dual" /><label for="dual"
+                  >Gaming OC(GIGABYTE)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="turbo" /><label for="turbo"
+                  >Eagle(GIGABYTE)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="phoenix" /><label for="phoenix"
+                  >Phoenix(ASUS)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="cerberus" /><label for="cerberus"
+                  >Gaming X Trio(MSI)</label
+                ><span class="count">(Test)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 mb-4 d-flex">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/gain/84d2d1e6-aca7-4487-9892-09760ed7731b/w185/fwebp"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      ASUS TUF Gaming GeForce RTX™ 5070 12GB GDDR7
+                    </h5>
+                    <p class="card-text small">
+                      ASUS Dual GeForce RTX™ 5070 12GB GDDR7 with two powerful
+                      Axial-tech fans and a compact dual-fan design for broad
+                      compatibility.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">25.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/gain/57d8c78e-be51-4992-9ee0-47d2aefd350d/w185/fwebp"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      ASUS TUF Gaming Radeon™ RX 9070 16GB GDDR6
+                    </h5>
+                    <p class="card-text small">
+                      ASUS TUF Gaming Radeon RX 9070 OC Edition with
+                      military-grade components, lower temps, and enhanced
+                      durability
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">24.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/gain/e034aa21-7d15-4122-b816-81740bb762b0/w185/fwebp"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER BTF White
+                      Edition 16GB GDDR6X
+                    </h5>
+                    <p class="card-text small">
+                      ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER BTF White 16GB
+                      GDDR6X with DLSS3, innovative Graphics Card High-Power
+                      (GC-HPWR) Gold Finger, and enhanced durability.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">21.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://asset.msi.com/resize/image/global/product/product_17446998084ae59995439395644520b35b981f904b.png62405b38c58fe0f07fcef2367d8a9ba1/400"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />  
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      MSI GeForce RTX 5060Ti 16GB VANGUARD OC Edition
+                    </h5>
+                    <p class="card-text small">
+                      MSI Vanguard series graphics card embodies the spirit of
+                      exploration. Premium gaming craftsmanship is expressed
+                      with aerodynamic edges, fractured lines, and futuristic
+                      RGB lights that empower players to push the limits of
+                      adventure while exploring uncharted worlds.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">19.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://asset.msi.com/resize/image/global/product/product_17375156388390d884588a56ef78f024dbcb4dc7c6.png62405b38c58fe0f07fcef2367d8a9ba1/400"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      GeForce RTX™ 5080 16G SUPRIM LIQUID SOC
+                    </h5>
+                    <p class="card-text small">
+                      Unlock superior performance with the MSI SUPRIM LIQUID
+                      graphics card, blending top-tier design and materials with
+                      advanced liquid cooling. Dominate the game with striking
+                      aesthetics and a system that stays cool under pressure.
+                      Redefine your gaming experience with peerless precision
+                      and sophistication.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">40.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://asset.msi.com/resize/image/global/product/product_1670983287d75cd77f9d0c7841017e8c140a20a8de.png62405b38c58fe0f07fcef2367d8a9ba1/400"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Radeon™ RX 7900 XTX GAMING TRIO CLASSIC 24G
+                    </h5>
+                    <p class="card-text small">
+                      Unlock superior performance with the MSI SUPRIM LIQUID
+                      graphics card, blending top-tier design and materials with
+                      advanced liquid cooling. Dominate the game with striking
+                      aesthetics and a system that stays cool under pressure.
+                      Redefine your gaming experience with peerless precision
+                      and sophistication.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">30.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://static.gigabyte.com/StaticFile/Image/Global/a67d9b9d9fe4c2d45c95946aec6375ee/Product/43834/png/400"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      AORUS GeForce RTX™ 5090 MASTER 32G
+                    </h5>
+                    <p class="card-text small">
+                      The AORUS series redefines next-gen aesthetics, embodying
+                      speed and power to deliver stunning visual experiences.
+                      Every detail is meticulously crafted for absolute velocity
+                      and unwavering strength.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">91.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://static.gigabyte.com/StaticFile/Image/Global/0bf5e3cf8d97b6fa58d330670a8c5a0b/Product/43840/webp/300"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      AORUS GeForce RTX™ 5090 XTREME WATERFORCE WB 32G
+                    </h5>
+                    <p class="card-text small">
+                      Convergence symbolizes the gathering of flowing water. By
+                      significantly expanding the transparent areas, it
+                      highlights the aesthetics of an open design. The seamless
+                      integration of the water-cooling structure with the
+                      graphics card's appearance embodies the XTREME series'
+                      commitment to ultimate luxury and premium craftsmanship.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">98.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://static.gigabyte.com/StaticFile/Image/Global/2c9319cda29065cc30ac66c4838790a6/Product/43906/webp/300"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      GeForce RTX™ 5070 Ti EAGLE OC ICE SFF 16G
+                    </h5>
+                    <p class="card-text small">
+                      The WINDFORCE cooling system delivers exceptional thermal
+                      performance through a combination of cutting-edge
+                      technologies. It features server-grade thermal conductive
+                      gel, innovative Hawk fans with alternate spinning,
+                      composite copper heat pipes, a large copper plate, 3D
+                      active fans, and screen cooling.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">32.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo">VNGPU</p>
+      <div class="contact-apps">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="white" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+          <a href="#">Tiktok Contact</a>
+          <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="White" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" corlo="white" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+        </svg>
+
+        <a href="#">About</a>
+        <a href="#">Adress</a>
+        <a href="#">Privacy</a>
+
+      </div>
+      <p class="footer-copy">&copy; 2025 VNGPU. All rights reserved.</p>
+    </div>
+  </footer>
+
+  </body>
+  </html>
+  <script src="JS_FILE/GPU.js"></script>
+</html>

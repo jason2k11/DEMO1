@@ -1,0 +1,267 @@
+/* Product Cards Section */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px 0;
+}
+.product-card {
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.product-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.product-card p, .product-card small {
+  color: #ccc;
+}
+.product-card .learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4aa4ff;
+  text-decoration: none;
+}
+.product-card .learn-more:hover {
+  color: #76baff;
+  text-decoration: underline;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(194, 20, 185, 0.3);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    width: 98%;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  body {
+    font-size: 0.95em;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    width: 100%;
+    margin: 5px auto;
+  }
+  body {
+    font-size: 0.85em;
+  }
+}
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqmY4GLxciPkkBPik8xyumRJXjbtqg762JfwOEvCpyLChn1Oa3zVGcbmmjnDzfn4uocUY&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+.carousel-small .carousel-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 55%; 
+}
+
+.carousel-small .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-small .carousel-item iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  margin: 40px auto;
+  max-width: 1000px; 
+  margin: auto;
+}
+
+
+.carousel-container .carousel-inner img {
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  max-height: 400px;
+  min-height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.carousel-small {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.carousel-small .carousel-inner iframe {
+  width: 100%;
+  height: 100%; 
+  border: none;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+
+.navbar {
+    background-color: #222 !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(92, 91, 91) !important; 
+    margin-right: 30px; 
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b1b0b0 !important; 
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.search-form {
+    margin-left: auto; 
+    display: flex;
+    color: #222;
+}
+
+.img{
+    height: 700px !important;
+}
+
+.btn{
+    color: rgb(218, 218, 218);
+    border-color: rgb(188, 188, 188);
+}
+
+.btn:hover{
+    color: rgb(0, 0, 0);
+    border-color: aliceblue;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.gaming-section {
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gaming-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gaming-item {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+}
+
+.gaming-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(194, 20, 185, 0.6);
+}
+
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #00ffff; 
+}
+
+.gaming-item:hover .icon {
+  color: #ff00ff; 
+}
+
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.hero a {
+  color: #4aa4ff;
+  text-decoration:none;
+}
+
+.hero a:hover{
+  color: #76baff;
+  text-decoration:underline;
+
+}
+
+.footer {
+  border-top: 1px solid #232222;
+  border-left: 1px solid #232222;
+  border-right: 1px solid #232222;
+  border-bottom: 1px solid #232222;
+  border-width: 5px;
+  color: #8d8989;
+  padding: 30px 20px;
+  text-align: center;
+
+}

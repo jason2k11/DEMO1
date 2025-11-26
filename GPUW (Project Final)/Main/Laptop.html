@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laptop PAGE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Laptop.css" />
+    <script src="../JS_FILE/Laptop.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid my-4">
+        <img class="logo" src="../anh/huge.png" alt="VNGPU" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Main.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">SignOut</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Cart.html">Your Cart</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+
+            <!--Bootstrap drop box-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="GPU.html">GPU</a></li>
+                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                <li><a class="dropdown-item" href="Monitor.html">Monitor</a></li>
+                <li><a class="dropdown-item" href="#">Mouse</a></li>
+                <li><a class="dropdown-item" href="#">Headphone</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Thanh tìm kiếm-->
+          <form class="search-form" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+          <!--Carousel video-->
+    <div id="videoCarousel" class="carousel slide carousel-small mt-4">
+        <div class="carousel-inner  ">
+          <div class="carousel-item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fmSmcSfC5fk?si=o088KkKOCr4hKCtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/f5vKxPA43lM?si=aC3cAvL9-xbjdUXB" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uZP6CsjsRSA?si=eDWjdGriPVPu4bY5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NV8D9bAEyuw?si=1AG-SVD7kgEwc9HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yu-QQOyDRJc?si=qNAS0_LBzBGfiuaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dkkMuxrwmYo?si=lqQjdQPasY2kAPJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid my-4">
+      <div class="row">
+        <!-- Product List -->
+        <div class="col-md-3">
+          <!--Cot filter-->
+          <div class="filter-section body1">
+            <div class="filter-group">
+              <h3>By chipset/Brand</h3>
+
+              <div class="filter-option">
+                <input type="checkbox" id="amd" />
+                <label for="amd">Intel</label>
+                <span class="count">(Test)</span>
+              </div>
+
+              <div class="filter-option">
+                <input type="checkbox" id="nvidia" />
+                <label for="nvidia">AMD</label>
+                <span class="count">(Test)</span>
+              </div>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <div class="filter-group">
+              <h3>By Brand / Series</h3>
+              <div class="filter-option">
+                <input type="checkbox" id="rog" /><label for="rog"
+                  >ROG (ASUS)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="tuf" /><label for="tuf"
+                  >TUF Gaming(Asus)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="proart" /><label for="proart"
+                  >Titan(MSI)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="prime" /><label for="prime"
+                  >Stealth(MSI)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="ko" /><label for="ko"
+                  >Nitro(Acer)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="dual" /><label for="dual"
+                  >Predator(Acer)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="turbo" /><label for="turbo"
+                  >Legion(Lenovo)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="phoenix" /><label for="phoenix"
+                  >LOQ(Lenovo)</label
+                ><span class="count">(Test)</span>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="cerberus" /><label for="cerberus"
+                  >Alienware(Dell)</label
+                ><span class="count">(Test)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 mb-4 d-flex">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://nguyencongpc.vn/media/product/26286-02_scar_18_l.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Asus ROG Strix SCAR 18 G834JYR-R6011W
+                    </h5>
+                    <p class="card-text small">
+                      ASUS ROG Strix SCAR 18 G834JYR-R6011W is a powerful gaming
+                      laptop with an 18" QHD+ 240Hz display, Intel Core i9 CPU,
+                      and RTX 4090 GPU — built for top-tier performance and
+                      smooth gameplay.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">95.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://dlcdnwebimgs.asus.com/files/media/845a6334-df9a-46de-a4a0-35440b651f9f/img/22_FX607VU_edited.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">ASUS TUF Gaming F16 (2025)</h5>
+                    <p class="card-text small">
+                      The ASUS TUF Gaming F16 (2025) is a robust and versatile
+                      gaming laptop designed to deliver high performance and
+                      durability at a competitive price point. It caters to
+                      gamers and content creators seeking powerful
+                      specifications without the premium cost.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">31.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <div class="card-body">
+                    <img
+                      src="https://c1.neweggimages.com/BizIntell/item/Gaming%20Notebooks/Gaming%20Laptops/34-156-784/2.png"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Msi Titan 18 HX Dragon Edition Norse Myth A2XWIG
+                    </h5>
+                    <p class="card-text small">
+                      The MSI Titan 18 HX Dragon Edition Norse Myth (A2XWIG) is
+                      a limited-edition gaming laptop that combines top-tier
+                      performance with a distinctive Norse mythology-inspired
+                      design. Featuring a hand-drawn dragon etching on the lid
+                      and a 3D-printed dragon coin embedded in the palm rest, it
+                      stands out as both a powerful machine and a collector's
+                      item.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">120.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://bizweb.dktcdn.net/thumb/large/100/386/607/products/msi-stealth-14-studio-cong-ket-noi-phai.png?v=1675415643133"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Laptop MSI Stealth 14 studio A13VF 051VN
+                    </h5>
+                    <p class="card-text small">
+                      The MSI Stealth 14 Studio A13VF-051VN is a
+                      high-performance, ultra-portable laptop designed for
+                      gamers and creative professionals who require power and
+                      mobility. With its sleek design and robust specifications,
+                      it caters to demanding tasks such as gaming, content
+                      creation, and professional workloads.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">28.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://cdn.uc.assets.prezly.com/1398820a-767a-44ee-974c-33b2c462bc3e/Nitro_14_(AN14-41)_Special_Angle_1.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">Acer Nitro 16</h5>
+                    <p class="card-text small">
+                      The Acer Nitro 16 is a versatile 16-inch gaming laptop
+                      that bridges the gap between budget-friendly options and
+                      high-performance machines. With configurations featuring
+                      both AMD and Intel processors, paired with NVIDIA GeForce
+                      RTX 40 Series GPUs, it caters to gamers and content
+                      creators seeking solid performance without breaking the
+                      bank.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">20.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://cellphones.com.vn/sforum/wp-content/uploads/2023/04/Acer-Predator-Helios-Neo-16-01.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">Acer Predator Neo 16</h5>
+                    <p class="card-text small">
+                      The Acer Predator Helios Neo 16 (PHN16-71) is a 16-inch
+                      gaming laptop that strikes a balance between performance
+                      and affordability. It combines the robust features of
+                      Acer's Predator series with cost-effective design choices,
+                      making it suitable for gamers and content creators seeking
+                      high performance without a premium price tag.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">35.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://product.hstatic.net/200000722513/product/legion_7_16irx9_ct1_03_fd6a1ccfe23f4abfa05961344cae7b45_1024x1024.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Laptop gaming Lenovo Legion 5
+                    </h5>
+                    <p class="card-text small">
+                      The Lenovo Legion 7 16IRX9 (83FD004MVN) is a high-end
+                      gaming laptop designed for enthusiasts and professionals
+                      seeking top-tier performance and premium features.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">30.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://philong.com.vn/media/product/33983-laptop-gaming-lenovo-loq-15iax9-83gs000rvn-philong03.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">
+                      Lenovo LOQ 15IAX9 83GS000RVN
+                    </h5>
+                    <p class="card-text small">
+                      The Lenovo LOQ 15IAX9 83GS000RVN is a mid-range gaming
+                      laptop designed to offer a balance between performance and
+                      affordability. It's equipped with an Intel Core i5-12450HX
+                      processor and an NVIDIA GeForce RTX 4050 GPU, making it
+                      suitable for gaming and content creation tasks.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">22.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100 w-100">
+                <div style="height: 91%; margin-bottom: 10px">
+                  <img
+                    src="https://laptop88.vn/media/product/7883_csm_alienware_x16_02_159aeeb2fb_1536x1146.png"
+                    class="card-img-top"
+                    alt="Product Image"
+                  />
+                  <div class="card-body">
+                    <div class="logo-row">
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/c137a200-b6ce-4a88-bfb5-6aad5c13a451/"
+                        alt="Windows 11"
+                        class="logo-img"
+                      />
+
+                      <img
+                        src="https://dlcdnwebimgs.asus.com/gain/1269fec2-7b9c-44f7-8dc8-300cab784d1b/"
+                        alt="Adobe Creative Cloud"
+                        class="logo-img"
+                      />
+                    </div>
+                    <h6 class="badge bg-primary">NEW</h6>
+                    <h5 class="card-title mt-2">Alienware X16</h5>
+                    <p class="card-text small">
+                      The Alienware x16 is a premium 16-inch gaming laptop from
+                      Dell, renowned for its sleek design, powerful performance,
+                      and high-quality display. It caters to gamers and content
+                      creators seeking top-tier specifications in a portable
+                      form factor.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between gap-2 px-3 mb-2">
+                  <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                  <a href="#" class="btn btn-primary btn-sm">46.000.000 | Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-logo">VNGPU</p>
+        <div class="contact-apps">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            color="white"
+            fill="currentColor"
+            class="bi bi-tiktok"
+            viewBox="0 0 16 16"
+          >
+            <a href="#">Tiktok Contact</a>
+            <path
+              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            color="White"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            corlo="white"
+            fill="currentColor"
+            class="bi bi-envelope-at-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+            />
+            <path
+              d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+            />
+          </svg>
+
+          <a href="#">About</a>
+          <a href="#">Adress</a>
+          <a href="#">Privacy</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 VNGPU. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  </html>
+  <script src="../JS_FILE/Laptop.js"></script>
+</html>
